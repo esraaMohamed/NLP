@@ -1,7 +1,7 @@
 const dotenv = require("dotenv");
 dotenv.config();
-
-const baseUrl = `https://api.meaningcloud.com/sentiment-2.1?key=${process.env.API_KEY}`
+const apiKey = process.env.API_KEY || '629d036f4404229ff725bbe6fbbeb8b8'
+const baseUrl = `https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}`
 const port = process.env.PORT || 8081;
 
 var path = require("path");
