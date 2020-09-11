@@ -2,6 +2,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const baseUrl = `https://api.meaningcloud.com/sentiment-2.1?key=${process.env.API_KEY}`
+const port = process.env.PORT || 8081;
 
 var path = require("path");
 const fetch = require('node-fetch')
@@ -35,8 +36,8 @@ app.get("/", (req, res) => {
   res.sendFile("dist/index.html");
 });
 
-app.listen(8081, () => {
-  console.log("Example app listening on port 8081!");
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
 });
 
 app.post("/sentiment", (req, res) => {
