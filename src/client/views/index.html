@@ -22,52 +22,50 @@
                     <input id="submit" type="submit" name="" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                     <p id="error" class="error" hidden>Please input a valid URL</p>
                 </form>
-                <section>
 
-                    <section class="results">
-                        <strong class="title">NLP Results:</strong>
-                        <ul type="circle">
-                            <li>
-                                <div id="subjectivity"></div>
-                            </li>
-                            <li>
-                                <div id="score"></div>
-                            </li>
-                            <li>
-                                <div id="agreement"></div>
-                            </li>
-                            <li>
-                                <div id="confidence"></div>
-                            </li>
-                            <li>
-                                <div id="irony"></div>
-                            </li>
-                        </ul>
-                    </section>
-                </main>
+                <section class="results">
+                    <strong class="title">NLP Results:</strong>
+                    <ul type="circle">
+                        <li>
+                            <div id="subjectivity"></div>
+                        </li>
+                        <li>
+                            <div id="score"></div>
+                        </li>
+                        <li>
+                            <div id="agreement"></div>
+                        </li>
+                        <li>
+                            <div id="confidence"></div>
+                        </li>
+                        <li>
+                            <div id="irony"></div>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </main>
 
-                <footer class="footer">
-                    <h3>Contact Me
-                    </h3>
-                    <a href="https://github.com/esraaMohamed">
-                        <img class="logos" src="images/github.jpg" alt="Github">
-                    </a>
-                    <a href="https://www.facebook.com/No0oU">
-                        <img class="logos" src="images/facebook.png" alt="Facebook">
-                    </a>
-                    <a href="https://www.linkedin.com/in/esraa-afifi/">
-                        <img class="logos" src="images/linkedin.png" alt="LinkedIn">
-                    </a>
-                </footer>
-                <script>
-                    // Check that service workers are supported
-                    if ('serviceWorker' in navigator) { // Use the window load event to keep the page load performant
-                        window.addEventListener('load', () => {
-                            navigator.serviceWorker.register('/service-worker.js');
-                        });
-                    }
-                </script>
-            </body>
-        </html>
+        <footer class="footer">
+            <h3>Contact Me
+            </h3>
+            <a href="https://github.com/esraaMohamed">
+                <img class="logos" src="images/github.jpg" alt="Github">
+            </a>
+            <a href="https://www.facebook.com/No0oU">
+                <img class="logos" src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/esraa-afifi/">
+                <img class="logos" src="images/linkedin.png" alt="LinkedIn">
+            </a>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) { // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
     </body>
 </html>
