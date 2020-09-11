@@ -7,7 +7,8 @@
     "start": "nodemon src/server/index.js",
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack-dev-server  --config webpack.dev.js --open",
-    "heroku-postbuild": "yarn start && webpack --config webpack.prod.js"
+    "heroku-postbuild": "yarn start",
+    "postinstall" : "yarn start"
   },
   "keywords": [],
   "author": "",
