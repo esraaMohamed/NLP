@@ -14,3 +14,5 @@
   > `npm test` or `yarn test`
   
 ## This project uses the [MeaningCloud API](https://www.meaningcloud.com/developer/sentiment-analysis/doc/2.1/request)
+
+## The App is deployed using [Netfily](https://www.netlify.com). You can access the application [here](https://gallant-yonath-f74681.netlify.app)
